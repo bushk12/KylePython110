@@ -55,13 +55,17 @@ def main():
     my_dict = dict(zip(months, rainfall))
     k = Counter(my_dict)
 
+    # this will take the three highest numbers in the dictionary
     high = k.most_common(3)
     print("Rainfall Per Month: ")
+
+    # showing the dictionary ordered
     print(my_dict, "\n")
 
     print("Top Three Months For Rainfall: ")
     print("Month: Amount")
 
+    # for loop to print out the correct numbers from high on line 59
     for i in high:
         print(i[0], " :", i[1], " ")
 
@@ -72,11 +76,14 @@ def main():
     # Here I am reverse sorting the dictionary I created above. Issues with formatting the output but it works!
     sorted_dict = sorted(my_dict.items(), key=lambda kv: kv[1])
 
+    # taking the reverse sorted dictionary and doing the same thing as earlier
     h = Counter(sorted_dict)
     low = h.most_common(3)
 
+    # same for loop as line 69
     for k in low:
         print(k[0])
 
     print(' ')
-main()
+if __name__ == '__main__':
+    main()
