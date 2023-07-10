@@ -1,5 +1,5 @@
 # main function
-
+# I will be turning a list into a string, and a string into a list!
 def main():
     # turning a list into a string
     names = ['Einstein', 'Newton', 'Copernicus', 'Kepler']
@@ -23,5 +23,6 @@ def convert(string):
     li = list(string.split(" "))
     return li
 
+if __name__ == '__main__':
 
-main()
+    main()
