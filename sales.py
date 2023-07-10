@@ -15,7 +15,6 @@ def main():
     sun = float(input(f'Enter Sales for Sunday: '))
 
     # append the item to the list
-
     daily_sale.extend([mon, tue, wed, thu, fri, sat, sun])
 
 
@@ -24,4 +23,6 @@ def main():
         total = sum(daily_sale)
 
     print(f'The total sales for the week is ${total}.')
-main()
+if __name__ == '__main__':
+    main()
+
