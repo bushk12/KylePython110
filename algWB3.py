@@ -15,5 +15,7 @@ def main():
     print(numbers2)
 
 
-main()
+if __name__ == '__main__':
+    main()
+
 
