@@ -1,44 +1,34 @@
-
-
-
 def main():
+
     print("Rainfall Calculator")
     print('')
 
     total = 0
 
     # defining rainfall for month
-    rainfall = [0]
+    rainfall = []
 
     # defining the months
 
-    jan = float(input(f'Rainfall for January: '))
-    feb = float(input(f'Rainfall for February: '))
-    mar = float(input(f'Rainfall for March: '))
-    apr = float(input(f'Rainfall for April: '))
-    may = float(input(f'Rainfall for May: '))
-    jun = float(input(f'Rainfall for June: '))
-    jul = float(input(f'Rainfall for July: '))
-    aug = float(input(f'Rainfall for August: '))
-    sep = float(input(f'Rainfall for September: '))
-    octo = float(input(f'Rainfall for October: '))
-    nov = float(input(f'Rainfall for November: '))
-    dec = float(input(f'Rainfall for December: '))
+    jan = float(input(f'January: '))
+    feb = float(input(f'February: '))
+    mar = float(input(f'March: '))
+    apr = float(input(f'April: '))
+    may = float(input(f'May: '))
+    jun = float(input(f'June: '))
+    jul = float(input(f'July: '))
+    aug = float(input(f'August: '))
+    sep = float(input(f'September: '))
+    octo = float(input(f'October: '))
+    nov = float(input(f'November: '))
+    dec = float(input(f'December: '))
 
     # appending the months to the list
+    rainfall.extend([jan, feb, mar, apr, may, jun, jul, aug, sep, octo, nov, dec])
+    print('')
 
-    rainfall.append(jan)
-    rainfall.append(feb)
-    rainfall.append(mar)
-    rainfall.append(apr)
-    rainfall.append(may)
-    rainfall.append(jun)
-    rainfall.append(jul)
-    rainfall.append(aug)
-    rainfall.append(sep)
-    rainfall.append(octo)
-    rainfall.append(nov)
-    rainfall.append(dec)
+    # declaring the months
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
     # taking the total
     for value in rainfall:
@@ -57,42 +47,36 @@ def main():
     print(f'The AVERAGE amount of rainfall each month for the year is: {average} inches/month')
 
     print('')
-    # finding the month with the most rainfall
 
-    if jan == max(rainfall):
-        print("January had the most rain with: ")
-    elif feb == max(rainfall):
-        print("February had the most rain with: ")
-    elif mar == max(rainfall):
-        print("March had the most rain with: ")
-    elif apr == max(rainfall):
-        print("April had the most rain with: ")
-    elif may == max(rainfall):
-        print("May had the most rain with: ")
-    elif jun == max(rainfall):
-        print("June had the most rain with: ")
-    elif jul == max(rainfall):
-        print("July had the most rain with: ")
-    elif aug == max(rainfall):
-        print("August had the most rain with: ")
-    elif sep == max(rainfall):
-        print("September had the most rain with: ")
-    elif octo == max(rainfall):
-        print("October had the most rain with: ")
-    elif nov == max(rainfall):
-        print("November had the most rain with: ")
-    elif dec == max(rainfall):
-        print("December had the most rain with: ")
-    else:
-        print("Cant Compute")
+    # creating a dictionary to display top results
+    from collections import Counter
 
-    print(max(rainfall))
+    # zip the lists together, so they're paired properly before finding the top three
+    my_dict = dict(zip(months, rainfall))
+    k = Counter(my_dict)
+
+    high = k.most_common(3)
+    print("Rainfall Per Month: ")
+    print(my_dict, "\n")
+
+    print("Top Three Months For Rainfall: ")
+    print("Month: Amount")
+
+    for i in high:
+        print(i[0], " :", i[1], " ")
 
     print('')
+    print("Lowest Three Months For Rainfall: ")
+    print("Month: Amount")
 
-    print(min(rainfall))
+    # Here I am reverse sorting the dictionary I created above. Issues with formatting the output but it works!
+    sorted_dict = sorted(my_dict.items(), key=lambda kv: kv[1])
 
+    h = Counter(sorted_dict)
+    low = h.most_common(3)
 
+    for k in low:
+        print(k[0])
+
+    print(' ')
 main()
-
-
