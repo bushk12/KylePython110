@@ -14,17 +14,9 @@ def main():
     sat = float(input(f'Enter Sales for Saturday: '))
     sun = float(input(f'Enter Sales for Sunday: '))
 
-    # create an error loop below
-
     # append the item to the list
 
-    daily_sale.append(mon)
-    daily_sale.append(tue)
-    daily_sale.append(wed)
-    daily_sale.append(thu)
-    daily_sale.append(fri)
-    daily_sale.append(sat)
-    daily_sale.append(sun)
+    daily_sale.extend([mon, tue, wed, thu, fri, sat, sun])
 
 
     # adding the values together
