@@ -11,6 +11,7 @@ def main():
     # printing the result
     print(replaced)
 
+
 # calling main function
 if __name__ == '__main__':
     main()

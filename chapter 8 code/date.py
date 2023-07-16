@@ -3,39 +3,22 @@ def main():
     print('Please enter the date in mm/dd/yyyy format!\n')
     # asking the user for the input
     userdate = input('Enter Date: ')
+    # creating a list of months to shorten up the code.
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+              'November', 'December']
 
-    # formatting the date, getting rid of all the "/" in the entire
+    # formatting the date, getting rid of all the "/" in the entire string
     lst = userdate.split("/")
+    # combining the months list I created with the userdate inputted string.
+    month_name = months[int(lst[0]) - 1]
+    # giving the day an int value to get rid of the "0" if it is 08
+    day = int(lst[1])
+    # assigning the year to the last value
+    year = int(lst[2])
 
-    # getting rid of the 0s and "/" in lst2 (the day)
-    lst2 = userdate.split("0" and "/")[1]
-    print("")
-
-    # creating if statement to print out the correct format.
-    if lst[0] == '01':                                      # taking element 0 from lst. which would be the month
-        print('January' + " " + lst2[1] + ', ' + lst[2])    # taking lst2[1] element which would be the day & the year from lst, which is the last element
-    if lst[0] == '02':
-        print('February' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '03':
-        print('March' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '04':
-        print('April' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '05':
-        print('May' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '06':
-        print('June' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '07':
-        print('July' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '08':
-        print('August' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '09':
-        print('September' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '10':
-        print('October' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '11':
-        print('November' + " " + lst2[1] + ', ' + lst[2])
-    if lst[0] == '12':
-        print('December' + " " + lst2[1] + ', ' + lst[2])
+    print()
+    # combining it all to print out a result!
+    print(f'Your date reformatted is: \n' + str(month_name) + " " + str(day) + ', ' + str(year))
 
 
 if __name__ == '__main__':

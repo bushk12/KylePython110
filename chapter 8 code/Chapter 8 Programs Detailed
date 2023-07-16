@@ -1,0 +1,107 @@
+AlgWB6:
+Write Code That makes a copy of a string with all occurrences of the lowercase letter 't' converted to uppercase
+
+How I solved it:
+
+Created a variable called string which allows the user to input their own string with lowercase t's. I then created
+another variable called replaced. Which runs the string.replace("t", "method"). That .replace will take all the
+t's and turn them into T's. I then print out the variable replaced. Try it for yourself!
+
+#######################################################################################################################
+
+AlgWB10:
+mystring='cookies>milk>fudge>cake>ice cream'
+
+Write a statement that splits the string, creating the following list:
+['cookies','milk','fudge','cake','ice cream']
+
+How I solved it:
+I created a new variable called "lst" that equaled mystring and adding .split(char) to it.
+the (char) being the ">". Solved my issue because I tried doing the .replace which didn't work
+due to it thinking the space between ice and cream needed to be removed.
+
+#######################################################################################################################
+
+PROGRAMMING EXERCISE:
+
+Exercise 1 initials.py:
+Write a program that gets as string containing a person's first, middle, and last names, display their first,
+middle, and last initials. For example, if the user enters 'John William Smith', the program should display
+"J.W.S"
+
+How I solved it:
+
+This one was fairly easy. I knew I needed to have a user input and then create a list from that user input. I then needed
+to select the first element from the list and then take the first letter from that specified element.
+
+
+#######################################################################################################################
+
+Exercise 3 date.py:
+Write a program that reads a string from the user containing a date in the form mm/dd/yyyy. It should print the date
+in the format March 12, 2018.
+
+Initial Ideas:
+The first idea that came to mind was allowing the user to input any number between 1 and 12 to select their month. I would
+first need to assign those numbers months(strings). Kind of like my rainfall.py program I did last week. I am going to need to
+read the user input. For example below is what the user will see when the program is launched.
+
+              "Please input the current date in mm/dd/yyyy format. PLEASE use "/" !"
+              (input) Date: 07/30/1997
+
+              (output)String: July 30, 1997
+
+This program was actually quite tricky. I decided on doing an if statement to properly format the sentence at the end.
+I took the print statement from initials.py and reformatted it into the variables that worked with date.py.
+
+I thought I had finished it but went back to debugging before submitting and realized I had an error. Whenever I would input
+05/30/2000, the day would output May 3, 2000 instead of May 30, 2000. After I tinkered around with it for a while, I realized
+I should start over and make it easier for myself and whoever may be viewing the program. I decided to create a list of months
+so the code would be easier to read and manage. I also decided to use the int functionality that python gives us to automatically
+get rid of any redundant 0's in the program. That would bypass me having to ride a few lines of code and just stick to one
+per variable. Instead of my 50 lines of code I now have roughly 25 including spaces!
+
+#######################################################################################################################
+
+Exercise 10 frequent.py:
+
+Write a program that lets the user enter a string and displays the character that appears most frequently in the
+string.
+
+How I solved:
+Last week I used import to shorten up a chunk of my of my code. It helps with readability and time coding. Instead of creating
+a long drawn out function, I did about two lines of code to solve this.
+
+Issue #1:
+Not counting if they were upper and lowercase. I decided to turn the string into all lowercase characters to just make it
+easier to count. Then I passed it through the "count" variable.
+
+Issue #2:
+Counting spaces if there is more than one common variable...I needed to print multiple choices if there happened be any.
+I decided to add another variable called count. Which will return the most common letters!
+
+Using the import collections really helped me cut down on code and readability. Python provides a plethora of tools
+to make it easier for both programmer and user. I find myself searching for simpler ways to code in python daily. I use
+docs.python.org for my research and implementation. A lot of it is through trial and error, but I do get it working!
+
+
+
+######################################################################################################################
+
+Exercise 11 separator.py:
+
+Write a program that accepts as input a sentence in which all of the words are run together, but the first character of
+each word is uppercase. Convert the sentence to a string in which the words are seperated by spaces, and only the first
+word starts with an uppercase letter. For example the string "StopAndSmellTheRoses" would be converted to
+"Stop and smell the roses."
+
+How I Solved:
+This one was especially tricky. I tried at least three different iterations of the for loop before I landed on this one.
+The one thing I was missing was adding a third value. Which in this final product was the a value. I kept getting a sentence
+that would print out spaced, but all of the letters were lowercase.
+
+The thought process I had for this was needing multiple values for the string provided by the user. One to store the user input,
+one to store the final product, and one to know where we are in the sentence. It starts off by stating that "if ch.isupper
+and a > 0:" This allows us to properly know where the capital letters are and how to start the loop. "fixed" will start storing
+the answers and input spaces for us. Then on the line below it will assign the lowercase letters correctly. If it does not
+have uppercase letters at all, it will just spit out what it was given (using else).
