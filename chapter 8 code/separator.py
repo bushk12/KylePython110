@@ -1,4 +1,5 @@
 def main():
+    print("Programming Exercise 11\n")
     # user input
     print("Enter a sentence below with no spaces, but every word starts with a capital letter.")
     # asking the user for a sentence

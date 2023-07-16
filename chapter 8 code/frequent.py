@@ -1,4 +1,5 @@
 def main():
+    print("Programming Exercise 10\n")
     # creation of the user string
     string = input("Please enter a sentence: ")
 

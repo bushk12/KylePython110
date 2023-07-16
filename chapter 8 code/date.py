@@ -1,4 +1,5 @@
 def main():
+    print("Programming Exercise 3\n")
     # heading and information
     print('Please enter the date in mm/dd/yyyy format!\n')
     # asking the user for the input

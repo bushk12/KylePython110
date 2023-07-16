@@ -1,4 +1,5 @@
 def main():
+    print("Algorithm Workbench 10\n")
     # creation of mystring
     mystring = 'cookies>milk>fudge>cake>ice cream'
 

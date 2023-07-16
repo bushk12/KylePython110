@@ -1,5 +1,6 @@
 def main():
-    # asking the user to input their full namne
+    print("Programming Exercise 1\n")
+    # asking the user to input their full name
     name = input("Please enter your full name: ")
 
     # creating a list from the string
