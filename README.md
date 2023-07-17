@@ -13,7 +13,7 @@ I will also be linking my upcoming website full of portfolio projects! Feel free
 it is posted on linkedIn.
 
 
-======================================================================================================================
+==========================================================================
 
 
 Chapter 7 Links I Used:
