@@ -1,6 +1,6 @@
 # KylePython110
 CITP 110 Kyle Bush Projects 
-=====================================================================================================================
+
 
 Welcome to my Introduction to Python Programming 110 GitHub repository page!
 
