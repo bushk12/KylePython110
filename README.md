@@ -20,3 +20,11 @@ Chapter 7 Links I Used:
 
 rainfall.py dictionary: https://www.geeksforgeeks.org/python-program-to-find-the-highest-3-values-in-a-dictionary/amp/ 
 
+==========================================================================
+
+Chapter 9 Links:
+
+Youtube for coding walkthrough:
+
+https://www.youtube.com/watch?v=JEJvc6hB8JA
+
