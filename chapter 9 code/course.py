@@ -38,8 +38,6 @@ def main():
     while choice < CS101 or choice > QUIT:
         choice = int(input('Enter a valid choice:'))
 
-    # restarting the function after input
-
     # if statement for the user
     # if the user chooses 1 it will print out the following
     if choice == CS101:
