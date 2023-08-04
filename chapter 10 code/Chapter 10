@@ -1,0 +1,25 @@
+4. Employee Class
+
+Write a class named Employee that holds the following data about an employee in attributes: name, ID Number, Department,
+and job title.
+
+Once you have written the class, write a program that creates three Employee objects to hold the following data:
+
+Name            ID Number   Department      Job Title
+======================================================
+Susan Meyers    47899       Accounting      Vice president
+Mark Jones      39119       IT              Programmer
+Joy Rogers      81774       Manufacturing   Engineering
+
+The program should store this data in three objects, then display the data for each employee on the screen.
+
+Thoughts:
+I think I should start off by simply creating two different python programs, one will be my main function, the other
+will have the meat and potatoes and be a module with the class in them.
+
+3. Personal Information Class
+
+Design a class that holds the following personal data: name, address, age, and phone number.
+Write appropriate accessor and mutator methods. Also, write a program that creates three instances of the class.
+Each instance should hold fictional information for a fake person.
+(For privacy purposes, do not store real personal information in your program.)
