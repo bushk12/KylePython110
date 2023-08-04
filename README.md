@@ -28,3 +28,28 @@ Youtube for coding walkthrough:
 
 https://www.youtube.com/watch?v=JEJvc6hB8JA
 
+
+==========================================================================
+
+Chapter 10 Links:
+
+YouTube for coding walkthroughs:
+Exercise 4
+https://youtu.be/3HXQOJWssP4
+Exercise 3
+https://youtu.be/2hcBvBco5i0
+
+
+
+
+==========================================================================
+Chapter 11 Links:
+
+YouTube for coding walkthroughs:
+Exercise 1
+https://youtu.be/qPe2z9ZlAcE
+Exercise 2
+https://youtu.be/1LIq-TPJlI0
+
+
+
